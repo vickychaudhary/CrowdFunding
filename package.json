@@ -1,9 +1,10 @@
 {
   "name": "hardhat-javascript-starter",
+  "type": "commonjs",
   "scripts": {
-    "build": "npx thirdweb@latest detect",
-    "deploy": "npx thirdweb@latest deploy",
-    "publish": "npx thirdweb@latest publish"
+    "build": "npx thirdweb@latest detect -k qLJycvbQK_NXPNS0r7QooHIiDCCUXYzSCvzjViMkz3cvD4vz58AP_8Vfz1-h5IkSeBLdIPZ2K960POuv6B-cWw",
+    "deploy": "npx thirdweb@latest deploy -k qLJycvbQK_NXPNS0r7QooHIiDCCUXYzSCvzjViMkz3cvD4vz58AP_8Vfz1-h5IkSeBLdIPZ2K960POuv6B-cWw",
+    "publish": "npx thirdweb@latest publish -k qLJycvbQK_NXPNS0r7QooHIiDCCUXYzSCvzjViMkz3cvD4vz58AP_8Vfz1-h5IkSeBLdIPZ2K960POuv6B-cWw"
   },
   "devDependencies": {
     "@matterlabs/hardhat-zksync-solc": "^0.3.17",
@@ -11,6 +12,8 @@
   },
   "dependencies": {
     "@thirdweb-dev/contracts": "^3.8.0",
+    "dotenv": "^16.4.5",
+    "thirdweb": "^5.48.2",
     "zksync-web3": "^0.14.3"
   }
 }
